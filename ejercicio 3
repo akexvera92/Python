@@ -1,0 +1,22 @@
+class calculadora:
+  def __init__(self):
+    self.numerouno=int(input("ingrese el primer valor"))
+    self.numerodos=int(input("Ingrese el segundo"))
+  def mostrar(self):
+   print("primer valor",self.numerouno)
+   print("segundo valor",self.numerodos) 
+  def suma (self):
+        print("la suma de los valores es de",self.numerouno+self.numerodos)
+  def resta (self):
+        print("la resta de los valores es de",self.numerouno-self.numerodos)
+  def multiplicacion (self):
+        print("la multiplicacion de los valores es de",self.numerouno*self.numerodos)
+  def division (self):
+        print("la division de los valores es de",self.numerouno/self.numerodos)
+          
+calculadora=calculadora()
+calculadora.mostrar()
+calculadora.suma()
+calculadora.resta()
+calculadora.multiplicacion()
+calculadora.division()
