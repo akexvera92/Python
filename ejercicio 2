@@ -1,0 +1,23 @@
+class Alumno:
+  def __init__(self):
+    self.nombre=str(input("Ingrese el nombre: "))
+  
+  def mostrar(self):
+   print("Nombre: ",self.nombre)
+class Alumnos(Alumno):
+    def __init__(self):      
+        super().__init__()
+        self.nota=int(input("Ingrese la nota: ")  )
+    def mostrar(self):
+        super().mostrar()
+        print("Nota: ",self.nota)
+    def notas (self):
+        if self.nota > 2:
+            print("Aprobo la asignatura con la nota de ",self.nota)
+        else:
+            print("rejo en casa")
+
+          
+Alumnos=Alumnos()
+Alumnos.mostrar()
+Alumnos.notas()
